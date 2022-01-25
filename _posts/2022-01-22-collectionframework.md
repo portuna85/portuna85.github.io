@@ -217,7 +217,7 @@ public class StackQueue {
   - Enumeration은 Iterator의 구버전
   - ListIterator는 Ilterator의 접근성을 향상시킨 것(단방향 -> 양방향)  previous() 메소드도 있음
   - 컬렉션에 저장된 요소들을 읽어오는 방법을 표준화한 것
-  - iterator()를 호출햇 Iterator를 구현한 객체를 얻어서 사용
+  - iterator()를 호출해 Iterator를 구현한 객체를 얻어서 사용
 
   - Map에는 iterator()가 없다. keySet(), entrySet(), values()를 호출해야한다.
   - Map map = new HashMap();

@@ -13,6 +13,7 @@ title: "객체지향 프로그래밍 1"
 ### 객체는 인스턴스를 포함하는 일반적인 의미
 ## 객체의 구성 요소 - 속성과 기능
 ### - 속성은 변수 기능은 메서드
+
 ```java
 public class Car {
     // 속성
@@ -34,6 +35,7 @@ public class Car {
     }
 }
 ```
+
 ## 변수와 메소드
 ### 변수
   - 변수의 선언위치가 변수의 종류와 범위(scope)를 결정한다.
@@ -47,6 +49,7 @@ public class Car {
 
 ## 지역 변수(local variable)              (메소드 영역)
   - 메소드 내에 선언, 메소드 종료시 함께 소멸
+
 ```java
 public class Variables {        // 클래스영역 시작
     int iv;                     // 인스턴스변수
@@ -57,6 +60,7 @@ public class Variables {        // 클래스영역 시작
     }                           // 메소드영역 끝
 }
 ```
+
 ## 메소드
   - 작업을 실행하기 위한 명령문
   - 반복되는 코드 축소 관리 용이
@@ -68,6 +72,7 @@ public class Variables {        // 클래스영역 시작
   - 블럭{}안 수행 도중 return문을 만났을 때.
   - 반환 값이 없는 경우 return;만 작성하거나 생략가능
   - 있는경우 return 반환 값; 타입 일치해야만 함.
+
 ```java
 public class plus {
   public int add(int x, int y) {        // return Type는 int타입
@@ -76,6 +81,7 @@ public class plus {
   }
 }
 ```
+
 # 메소드
 
 ## 인스턴스 메소드(instance method)
@@ -110,6 +116,7 @@ public class MyMath {
   }
 }
 ```
+
 ```java
 public class CallClass {
   public void instanceMethod() {                // 인스턴스 메소드
@@ -184,10 +191,12 @@ class Data {
   }
 }
 ```
+
 ## 재귀호출
   - 매서드 내에서 자기자신을 반복적으로 호출하는 것
   - 이해하기 쉽고 간결한 코드를 작성할수 있다.
   - 팩토리얼, 제곱, 폴더목록표치 등
+
 ```java
 /*
   5! = 5 X 4 X 3 X 2 X 1
@@ -209,12 +218,14 @@ public class Factorial {
   }
 }
 ```
+
 ## 오버로딩(Overloding)
   - 하나의 클래스에 동일이름의 메소드를 여러개 정의 하는 것.
 ### 오버로딩 조건
   - 메소드 이름 같아야 한다.
   - 매개변수의 갯수 또는 타입이 달라야한다.
   - 매개변수 개수, 타입이 동일한경우 already defined에러발생
+
   ```java
 class MethodOverloding {
   public int add() {
@@ -252,6 +263,7 @@ class MethodOverloding {
   }
 }
 ```
+
 ## 생성자(constructor)
   - 메소드와 비슷해 보이지만 아님
   - 인스턴스가 생성될 때마다 호룿로든 '인스턴스 초기화 매소드'
@@ -268,6 +280,8 @@ class MethodOverloding {
   - 인스턴스 자신을 가리키는 참조변수. 인스턴스의 주소가 저장
   - 모든 인스턴스 매소드 지역변수로 숨겨진 채로 존재
 ### 생성자를 이용한 인스턴스의 복사
+  
+
 ```java
 public class Car {
   public String color;

@@ -8,6 +8,7 @@ title: "조건문, 반복문(Conditional Loop)"
 
 ### if문
 #### if(조건문) { 문장 }
+
 ```java
 public class FlowEx4 {
   public static void main(String[] args) {
@@ -41,6 +42,7 @@ public class FlowEx4 {
 #### 문장
 #### break;
 #### default:
+
 ```java
 public class FlowEx10 {
     public static void main(String[] args) {
@@ -66,9 +68,11 @@ public class FlowEx10 {
     }
 }
 ```
+
 ### for, while, do while 반복문
 #### for(초기화 ; 조건식 ; 증감식)
 #### 1. 초기화 -> 2. 조건식 -> 3. 수행될 문장 -> 4. 증감식
+
 ```java
 public class FlowEx18 {
     public static void main(String[] args) {
@@ -81,8 +85,10 @@ public class FlowEx18 {
     }
 }
 ```
+
 ### while / do while 반복문
 ### while (조건식) { 조건식이 true일 때 수행될 문장 }
+
 ```java
 public class FlowEx26 {
     public static void main(String[] args) {
@@ -95,7 +101,9 @@ public class FlowEx26 {
     }
 }
 ```
+
 ### do { 조건식이 true일 때 수행될 문장 } while(조건식)
+
 ```java
 public class FlowEx29 {
     public static void main(String[] args) {
