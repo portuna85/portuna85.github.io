@@ -21,12 +21,10 @@ title: "객체지향 프로그래밍 2"
   - 포함관계 : 원(Circle)은 점(Point)를 가지고 있다.
 
 ```java
-// 상속관계
 public class Shape {}
-class Circle extends Shape {}
+class Circle extends Shape {}               // 상속관계
 
-// 포함관계
-class Point {
+class Point {                               // 포함관계
     public int x;
     public int y;
 }
