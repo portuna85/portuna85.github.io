@@ -255,6 +255,9 @@ public class Test {
   2. 배열의 복사 - copyOf(), copyOfRange()
   3. 배열 채우기 - fill(), setAll()
   4. 배열의 정렬과 검색 - sort(), binarySearch();
+  5. 다차원 배열의 출력 - deepToString();
+  6. 다차원 배열의 비교 - deepEquals();
+  7. 배열을 List로 변환 - asList(Object... a)
 
 ```java
 public class Test {
@@ -268,9 +271,7 @@ public class Test {
     }
 }
 ```
-  5. 다차원 배열의 출력 - deepToString();
-  6. 다차원 배열의 비교 - deepEquals();
-  7. 배열을 List로 변환 - asList(Object... a)
+ 
 ```java
 public class Test {
   public static void main(String[] args) {
