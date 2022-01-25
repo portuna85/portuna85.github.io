@@ -268,11 +268,9 @@ public class Test {
     }
 }
 ```
-
   5. 다차원 배열의 출력 - deepToString();
   6. 다차원 배열의 비교 - deepEquals();
   7. 배열을 List로 변환 - asList(Object... a)
-
 ```java
 public class Test {
   public static void main(String[] args) {
@@ -442,7 +440,8 @@ public class TreeSetEx1 {
     2. 값(value) : 키(key)와 달리 데이터의 중복 허용
     3. 해쉬함수(hash function)를 이용해 데이터를 읽어오기 & 저장하기
     4. 해쉬함수(hash function)로 해시테이블(hash table)에 데이터를 저장, 검색
-      ※ 해시테이블(Hashtable)은 배열과 링크드 리스타 조합된 형태.(2차원 배열과 유사)
+      
+        ※ 해시테이블(Hashtable)은 배열과 링크드 리스타 조합된 형태.(2차원 배열과 유사)
         - 배열의 장점 : 접근성
         - 링크드리스트 장점 : 변경유리
   
