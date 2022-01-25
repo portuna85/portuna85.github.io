@@ -19,6 +19,7 @@ title: "객체지향 프로그래밍 2"
   - 가능한 많은 관계를 맺어주어 재사용성을 높이고 관리하기 쉽게 한다.
   - 상속관계 : 원(Circle)은 도형(Shape)이다.
   - 포함관계 : 원(Circle)은 점(Point)를 가지고 있다.
+
 ```java
 // 상속관계
 public class Shape {}
@@ -35,9 +36,12 @@ class Circle {
     public int z;
 }
 ```
+
 ### 단일상속(single inheritance)
   - 자바는 단일상속만 허요
   - 비중이 높은 클래스 하나만 상속관계로, 나머지는 포함관계로 한다.
+
+
 ```java
 public class Tv {
   public boolean power;
@@ -105,6 +109,7 @@ class SmartTv extends Tv {
   }
 }
 ```
+
 ### Object클래스 - 모든 클래스의 최고부모 클래스
   - 상속 없는 클래스는 자동적으로 Object클래스를 받는다.
   - 상속 계층도의 최상위에는 Object클래스가 위치한다.
@@ -117,7 +122,7 @@ class SmartTv extends Tv {
   3. 부모클래스의 메소드보다 많은 예외를 선언 불가
   - 오버로딩(Overloding) - 기존에 없는 메소드를 정의 하는것.
   - 오버라이딩(Overriding) - 상속 받은 메소드의 내용을 변경 하는 것
-
+  
 ```java
 public class Tv {
   public void channelUp() {}
@@ -133,6 +138,7 @@ class SmartTv extends Tv{
   public void channelDown() {}        // 메소드 중복정의
 }
 ```
+
 ### this, super 참조변수
   - this : 인스턴스 자신을 가리키는 참조변수. 인스턴스 주소저장
   - super : this와 동일. 다만 부모의 멤버와 자신의 멤버를 구별하는 데 사용
@@ -140,6 +146,8 @@ class SmartTv extends Tv{
   - 자식클래스의 인스턴스를 생성하면, 자식의 멤버와 부모으 멤버가 합쳐진 하나의 인스턴스 생성
   - 부모의 멤버들도 초기화 하여야 됨으로 자식 생성자 첫 문장에 부모 생성자 호출
   - Object클래스를 제외한 클래스는 첫 줄에 부모 생성자 호출을 해야한다.
+
+
 ```java
 public class TvExam {
   public static void main(String[] args) {
@@ -163,6 +171,7 @@ class SmartTv extends Tv {
   }
 }
 ```
+
 ```java
 public class TvExam {
     public static void main(String[] args) {
@@ -184,6 +193,7 @@ class SmartTv extends Tv {
     }
 }
 ```
+
 ## 제어자(modifier)
   - 제어자는 크게 접근제어자, 그 외 제어자로 나뉨
   - 접근제어자는 하나만, 그 외 제어자는 조합해서 사용 가능
@@ -233,6 +243,7 @@ class SmartTv extends Tv {
 ### 참조변수 형변환
   - 상속관계에 있는 타입간 형변환 가능
   - 자식 타입에서 부모타입 형변환할때 형변환 생략 가능
+
 ```java
 public class Tv {
     public boolean power;
@@ -283,8 +294,9 @@ public class TvExam {
 ### 추상메소드(abstract method)
   - 선언부만 있고 구현부가 없는 메소드
   - 추상클래스를 상속받는 자식클래스에서 추상 메소드를 완성해야한다.
+
+
 ```java
-// 추상클래스 작성
 public class MoveEx {
   public static void main(String[] args) {
     Unit[] group = {new Marine(), new Tank(), new Marine()};
@@ -296,6 +308,7 @@ public class MoveEx {
   }
 }
 
+// 추상클래스 작성
 abstract class Unit {                           // 추상 클래스
   public int x, y;
 
@@ -438,6 +451,7 @@ class SCV extends GroundUnit implements Repairable {                // SCV클래
     void repair(Repairable r) {}
 }
 ```
+
 ## 내부클래스(inner class)
   - 클래스 안에 선언된 클래스
   - 특정 클래스 안에서만 주로 사용되는 클래스를 내부클래스로 선언
@@ -449,6 +463,7 @@ class SCV extends GroundUnit implements Repairable {                // SCV클래
   - 스태틱클래스 : 스태틱변수처럼 맴버변수 선언위치에 선언, 스태틱멤버처럼 사용.
   - 지역클래스 : 메서드나 초기화 블럭안에 선언, 선언된 영역 내부에서만 사용.
   - 익명클래스 : 이름 없는 일회용 클래스, 생성과 선언을 동시에 하나의 객체만 생성가능
+
 ```java
 public class Main {
   public static void main(String[] args) {
