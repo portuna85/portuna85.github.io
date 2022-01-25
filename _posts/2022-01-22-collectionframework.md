@@ -276,7 +276,7 @@ public class Test {
 public class Test {
   public static void main(String[] args) {
     int[] arr = {0, 1, 2, 3, 4};
-    // int[][] arr2D = {% raw %}{{11, 12, 13}, {21, 22, 23}}{% endraw %};
+    int[][] arr2D = {% raw %}{{11, 12, 13}, {21, 22, 23}}{% endraw %};
 
     System.out.println(Arrays.toString(arr));
     System.out.println(Arrays.toString(arr2D));    // 이중배열 출력하면 주소값 나옴
