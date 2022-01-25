@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "조건문, 반복문(ConditionalLoop)"
+title: "조건문, 반복문(Conditional Loop)"
 ---
 
 ## 조건문종류 (if else, switch break)
