@@ -48,7 +48,6 @@ public class FlowEx10 {
         Scanner sc = new Scanner(System.in);
         System.out.println("당신의 점수를 입력해주세요.");
         int i = sc.nextInt();
-
         switch (i / 10) {
             case 10: case 9:
                 grade = 'A';
