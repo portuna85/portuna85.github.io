@@ -139,9 +139,11 @@ public class ArrayList {
   - 데이터의 추가 : 한번의 Node 객체생성과 두번의 참조변경만으로 가능
   - 연결리스트 데이터 접근성이 나쁨
   - 바로 다음 객체만 알고 있어 하나씩 차례로 접근해야함
+
 ### Doubly Linked List - 이중 연결리스트, 접근성 향상
   - 더블 링크드 리스트(Doubly Linked List) - 이중 연결리스트, 접근성 향상
   - 앞뒤로 참조 주소 연결
+
 ### Doubly circular Linked List  - 이중 원형 연결리스트
   - 맨 앞 요소에서 맨마지막 요소로 접근가능 ( 반대로도 가능 )
   
@@ -171,6 +173,7 @@ class Node {
    - Object pop()         Stack의 맨 위에 저장된 객체 꺼냄
    - Object push()        Stack의 객체(item)를 저장
    - int search(Object o) Stack에서 주어진 객체(o)를 찾아서 그 위치를 반환. 못찾으면 -1을 반환
+
 #### ex) - 수식계산, 수식괄호검사, 워드프로세서의 undo/redo, 웹브라우저의 뒤로가기/앞으로가기
    
 ### 큐(Que) : FIFO(First In First Out)구조. 먼저 저장(offer)한것을 먼저 꺼내게(poll) 된다.
@@ -182,6 +185,7 @@ class Node {
    - boolean offer()        Que에 객체를 저장. true나 fals 반환
    - Object poll()          Que에 객체를 꺼내 반환. 비어있으면 null을 반환
    - Object peek()          삭제없이 요소를 읽어온다. Que가 비어있으면 null을 반환
+
 #### ex) - 최근 사용문서, 인쇄작업 대기목록
    
 
@@ -320,6 +324,7 @@ public interface Comparable {
 ### Set 인터페이스(집합) - 순서 X, 중복 X
   - 순서가 없는 데이터의 집합, 데이터 중복 허용하지 않음(육식동물 - 사자, 호랑이, 치타, 호랑이X)
   - 반환 타입은 boolean(Collection에 변화 있으면 true, 아니면 false)
+
 #### HashSet
   - Set인터페이스를 구현한 대표적인 컬렉션 클래스
   - 순서를 유지할려면, LinkedHashSet클래스 사용
@@ -432,6 +437,7 @@ public class TreeSetEx1 {
 ### Map 인터페이스 - 순서 X, 중복(키 X, 값 Ok)
   - 키(Key)와 값(value)의 쌍(pair)으로 이루어진 데이터 집합 (Key와 Value를 합쳐서 Entry라고 부름)
   - 순서가 없고, 키는 중복 허용하지 않고, 값은 중복 허용함(전화번호(지역번호) - 02 서울, 아이디/비밀번호 - 아이디는 중복허용X, 비밀번호 중복가능)
+
 #### HashMap과 HashTable
   - Map 인터페이스를 구현, 데이터를 키와 값을 쌍으로 저장
   - HashMap(동기화X)는 Hashtable(동기화Ok)의 신버젼
