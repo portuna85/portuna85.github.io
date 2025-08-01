@@ -6,32 +6,69 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      padding: 40px;
-      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background: #e0f7ff;
       color: #333;
-      max-width: 800px;
-      margin: auto;
     }
-    h1 {
-      color: #0066cc;
+    header {
+      background: #00b8f4;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin-top: 5px;
+      font-size: 1em;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
     .post {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    .post h2 {
+      margin: 0;
+      color: #007acc;
+    }
+    .post p {
+      color: #555;
+    }
+    a {
+      text-decoration: none;
+      color: #007acc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>👋 Welcome to My Java Blog</h1>
-  <p>이 블로그는 Java 백엔드 개발자가 학습하며 정리하는 기술 블로그입니다.</p>
-  <p><a href="/about">About Me</a> | <a href="/feed.xml">RSS</a></p>
-  <hr>
+<header>
+  <h1>☁️ My Java Dev Blog</h1>
+  <p>기분 좋은 하늘처럼, 매일 조금씩 성장하는 개발 블로그</p>
+</header>
+<div class="container">
   <div class="post">
-    <h2><a href="/2025-08-01-first-post.html">블로그 첫 글</a></h2>
+    <h2><a href="/2025/08/01/first-post.html">블로그 첫 글</a></h2>
     <p>2025-08-01 - Jekyll과 GitHub Pages로 시작한 첫 글입니다.</p>
   </div>
+</div>
+<footer>
+  ⛅ Powered by Jekyll & GitHub Pages
+</footer>
 </body>
 </html>
