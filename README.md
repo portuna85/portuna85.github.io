@@ -3,7 +3,7 @@
 Welcome to my personal blog powered by **Jekyll** and **GitHub Pages**!  
 I share what I learn about Java, backend development, and system design.
 
-> 📌 Blog URL: [https://username.github.io](https://username.github.io)
+> 📌 Blog URL: [https://portuna85.github.io]
 
 ---
 

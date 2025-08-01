@@ -1,5 +1,7 @@
 ---
 layout: post
+date: 2025-08-01
+categories: java
 title: "객체지향 언어란? OOP 개념과 특징 완벽 정리"
 tags: [객체지향언어, OOP, Java, Python, C++, 프로그래밍언어]
 ---
